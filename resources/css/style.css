@@ -1,0 +1,147 @@
+html {
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 1rem;
+  color: black
+}
+
+h1{
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Navigation/Hero Area */
+
+header {
+  background-image: url("/SIBRA/Web Development/Projects/Tortoiseshell-Optics/resources/images/glasses-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 30rem;
+  padding-top: 1rem;
+}
+
+nav {
+  background-color: cadetblue;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+
+nav div {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+}
+
+nav ul {
+  margin-right: 1rem;
+}
+
+nav ul li {
+  margin: 0 1rem;
+  display: inline;
+}
+
+nav img {
+  height: 1.5rem;
+  width: auto;
+  margin: 0 1rem 0 2rem;
+}
+
+.company-name {
+  align-items: center;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+
+@media only screen and (max-width: 960px) {
+
+  header {
+    padding: 0;
+    height: 22rem;
+    background-position: left;
+    transition: .3s;
+  }
+
+}
+
+@media only screen and (max-width: 700px) {
+
+  header {
+    height: 17rem;
+    background-position: 20%;
+  }
+
+}
+
+
+/* Hero Callout Area */
+
+.main-banner {
+  background: white;
+  padding: 1.5rem 5rem;
+  margin-top: 10rem;
+  margin-right: -2rem;
+  display: inline-block;
+  float: right;
+}
+
+@media only screen and (max-width: 960px) {
+
+  .main-banner {
+    padding: 0.75rem 4rem;
+    margin-top: 5rem;
+    margin-right: 2rem;
+    transition: .3s;
+
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+
+}
+
+@media only screen and (max-width: 700px) {
+
+  .main-banner {
+    padding: 0 1rem;
+    margin: 9rem auto 0 auto;
+    width: 100%;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+  }
+
+  .company-name {
+    display: none;
+  }
+
+}
