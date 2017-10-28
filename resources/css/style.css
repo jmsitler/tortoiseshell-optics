@@ -233,8 +233,11 @@ nav img {
 /* Info Section */
 
 .company-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .details {
@@ -280,8 +283,12 @@ nav img {
 
 .copyright {
   background-color: azure;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 5rem;
 }
 
@@ -298,7 +305,9 @@ nav img {
   }
 
   .copyright {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: 4rem 0;
   }
 
