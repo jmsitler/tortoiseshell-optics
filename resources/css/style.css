@@ -23,7 +23,7 @@ h1{
 /* Navigation/Hero Area */
 
 header {
-  background-image: url("/SIBRA/Web Development/Projects/Tortoiseshell-Optics/resources/images/glasses-bg.png");
+  background-image: url("../images/glasses-bg.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -34,16 +34,26 @@ header {
 nav {
   background-color: cadetblue;
   color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 1rem 0;
 }
 
 
 nav div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   max-width: 100%;
 }
 
@@ -63,7 +73,9 @@ nav img {
 }
 
 .company-name {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .mobile-nav {
@@ -77,6 +89,7 @@ nav img {
     padding: 0;
     height: 22rem;
     background-position: left;
+    -webkit-transition: .3s;
     transition: .3s;
   }
 
@@ -109,6 +122,7 @@ nav img {
     padding: 0.75rem 4rem;
     margin-top: 5rem;
     margin-right: 2rem;
+    -webkit-transition: .3s;
     transition: .3s;
 
   }
@@ -142,6 +156,154 @@ nav img {
 
   .company-name {
     display: none;
+  }
+
+}
+
+/* Services Icon */
+
+.services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.service {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: 3rem;
+  width: 5rem;
+  height: 8rem;
+}
+
+.service-img {
+  max-width: 5rem;
+  margin-bottom: 1rem;
+}
+
+
+
+.paper-icon {
+  width: 3.5rem;
+}
+
+@media only screen and (max-width: 560px) {
+
+  .services {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin: 3.77rem;
+  }
+
+  .service {
+    height: auto;
+    margin: .77rem;
+    font-size: .77rem;
+  }
+
+  .paper-icon {
+    margin-bottom: .77rem;
+  }
+
+}
+
+/* Info Section */
+
+.company-info {
+  display: flex;
+  justify-content: space-around;
+}
+
+.details {
+  width: 35%;
+}
+
+.details h4 {
+  background-color: cadetblue;
+  color: white;
+  padding: 0.5rem 0 0.5rem 1.25rem;
+  width: 10rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.4rem;
+}
+
+@media only screen and (max-width: 700px) {
+
+  .company-info  {
+    display: block;
+  }
+
+  .details {
+    width: 100%;
+  }
+
+  .details h4 {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .details p {
+    font-size: 0.77rem;
+    line-height: 1rem;
+    margin-bottom: 4rem;
+    padding: 0 1.25rem;
+
+  }
+
+}
+
+/* Footer Content */
+
+.copyright {
+  background-color: azure;
+  display: flex;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.copyright img {
+  height: 1.5rem;
+  width: auto;
+  margin: 4rem 1rem 4rem 4rem;
+}
+
+@media only screen and (max-width: 560px) {
+
+  .hide {
+    display: none;
+  }
+
+  .copyright {
+    justify-content: center;
+    padding: 4rem 0;
+  }
+
+  .copyright img{
+    margin: 0;
   }
 
 }
